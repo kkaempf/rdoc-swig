@@ -1,0 +1,11 @@
+Generating RDoc (Ruby 1.8) documentation from SWIG input (*.i) files
+
+Since I made the experience that using SWIGs %doc mechanism is clumsy
+to use, I did a closer look at the the parsing files of RDoc.
+
+rdoc_swig is the result. It directly parses comments from a SWIG input
+(typically .i) file and generates RDoc documentation.
+
+Just call the local 'rdoc' script. It will pick up the parse_swig.rb
+file and call the installed 'rdoc'. There's no difference to behavior
+of the normal 'rdoc' tool.
